@@ -1,0 +1,41 @@
+@page "/game"
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+
+@using System.ComponentModel.DataAnnotations;
+
+@*
+This is the GameScreen component that will be displayed when the game is in progress.
+It will display the grid of cards and a button to end the game.
+Optionally, we can add a timer, a score, and other game-related information here.
+We need to keep track of the state of each card, the number of cards, and the type of cards
+and implement the logic to check if two cards are a match. If they are a match, we can
+update the state of the cards to indicate that they are matched. If they are not a match,
+we can flip the cards back over.
+*@
+
+<PageTitle>Gameboard</PageTitle>
+
+<div class="gamescreen">
+    @for (int i = 0; i < DeckSize; i++)
+    {
+        <Card Id="@i" />
+    }
+</div>
+<button @onclick="EndGame">End Game</button>
+
+@code {
+
+    // The size of the deck (number of cards)
+    private int DeckSize { get; set; } = 16;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+
+    private void EndGame()
+    {
+        NavigationManager.NavigateTo("/endgame");
+    }
+}

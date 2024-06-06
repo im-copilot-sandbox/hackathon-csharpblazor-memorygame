@@ -1,0 +1,77 @@
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+*.nuget.props
+*.nuget.targets
+*.user
+*.suo
+*.userosscache
+*.userprefs
+*.nuspec
+*.pidb
+*.svclog
+*.scc
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+# Uncomment if you have tasks that create the project's static files in wwwroot
+#wwwroot/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUNIT
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# Build Results of an ATL Project
+[Dd]ebugPS/
+[Rr]eleasePS/
+dlldata.c
+
+# Benchmark Results
+BenchmarkDotNet.Artifacts/
+
+# .NET Core
+dotnet-tools.json
+**/.config/dotnet-tools.json
+.pub/
+*.listing
+*.placeholder
+*.launchSettings.json
+*.xproj
+*.sln.old
+*.slnx
+local.settings.json
+local.settings.json.*
+SecretManager/
+csc.exe
+*.csx
+*.cake
+publish/
+*.pfx
+*.publishsettings
+
+# Webpack
+webpack.config.js
+@react/
+**/js/
+**/css/
+**/sass/
+**/img/
+**/fonts/

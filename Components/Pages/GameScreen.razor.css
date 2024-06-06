@@ -1,0 +1,7 @@
+.gamescreen {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,14 @@
+{
+    "name": "C# Blazor Memory Game",
+    "dockerFile": "../Dockerfile",
+    "forwardPorts": [
+        5000,
+        5001
+    ],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-dotnettools.csharp"
+    ]
+}

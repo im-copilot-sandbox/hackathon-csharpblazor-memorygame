@@ -1,0 +1,29 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+
+<PageTitle>Splash Screen</PageTitle>
+
+
+<h1>Welcome to Memory Game!</h1>
+
+<div class="splash-screen">
+    <p>
+        Memory Game is an adaptation of the classic memory card game. The game is set on a board with an even amount of cards placed in a grid face-down. Each turn consists of flipping two cards. If they match, they remain face up. If they don't, they will flip back over on the next selection. Once all of the matches have been found, you WIN! You may restart the game to try and better your score or challenge a friend!
+    </p>
+</div>
+
+<button @onclick="GoToGameScreen">Let's Play</button>
+
+    
+
+@code {
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+protected void GoToGameScreen()
+    {
+        NavigationManager.NavigateTo("/game");
+    }
+}

@@ -1,0 +1,25 @@
+@page "/endgame"
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+
+<PageTitle>End Screen</PageTitle>
+
+
+<h1>Game Over</h1>
+
+<div class="end-screen">
+    <p>Thanks for playing!</p>
+</div>
+
+<button @onclick="GoToGameScreen">Let's Play Again!</button>
+
+@code {
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+protected void GoToGameScreen()
+    {
+        NavigationManager.NavigateTo("/game");
+    }
+}

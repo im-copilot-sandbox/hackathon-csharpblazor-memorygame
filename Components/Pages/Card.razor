@@ -1,0 +1,18 @@
+@page "/card"
+
+<div class="card" @onclick="ToggleIsFlipped">
+    <p>@(IsFlipped ? @Id : "?")</p>
+</div>
+
+@code {
+    [Parameter]
+    public bool IsFlipped { get; set; } = false;
+
+    [Parameter]
+    public int Id { get; set; }
+
+    public void ToggleIsFlipped()
+    {
+        IsFlipped = !IsFlipped;
+    }
+}
