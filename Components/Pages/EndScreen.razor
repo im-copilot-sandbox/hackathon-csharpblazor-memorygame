@@ -9,17 +9,15 @@
 
 <div class="end-screen">
     <p>Thanks for playing!</p>
+<p><a style="" href= "/">View Leaderboard</a></p>
 </div>
 
-<button @onclick="GoToGameScreen">Let's Play Again!</button>
+
+<button @onclick="@(async () => NavigationManager.NavigateTo("/game"))">Let's Play Again!</button>
 
 @code {
     protected override void OnInitialized()
     {
         base.OnInitialized();
-    }
-protected void GoToGameScreen()
-    {
-        NavigationManager.NavigateTo("/game");
     }
 }
