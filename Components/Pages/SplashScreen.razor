@@ -4,6 +4,13 @@
 
 <PageTitle>Splash Screen</PageTitle>
 
+@*
+    This is the SplashScreen component that will be displayed when the game starts.
+    It will display a welcome message and a button to start the game.
+    Optionally, we can add some instructions or a brief description of the game here
+    along with other options such as settings for the game including type of and number
+    of cards, and difficulty level.
+*@
 
 <h1>Welcome to Memory Game!</h1>
 
@@ -14,8 +21,6 @@
 </div>
 
 <button @onclick="GoToGameScreen">Let's Play</button>
-
-    
 
 @code {
     protected override void OnInitialized()

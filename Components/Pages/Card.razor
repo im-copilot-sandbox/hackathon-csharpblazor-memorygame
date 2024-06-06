@@ -4,6 +4,15 @@
     <p>@(IsFlipped ? @Id : "?")</p>
 </div>
 
+@* 
+    This is the Card component that represents a single card in the game. We need to
+    track the state of the card to determine if it has been flipped or matched. We also
+    need to track the type of card to check if two cards are a match. If the cards are a match,
+    we can update the state of the cards to indicate that they are matched. If they are not a match,
+    we can flip the cards back over. 
+*@
+
+
 @code {
     [Parameter]
     public bool IsFlipped { get; set; } = false;
