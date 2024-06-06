@@ -15,4 +15,3 @@
     ```sh
     dotnet watch
     ```
-# -hackathon-csharpblazor-memorygame
