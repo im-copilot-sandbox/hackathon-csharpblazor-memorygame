@@ -1,9 +1,5 @@
 @page "/card"
 
-<div class="card" @onclick="ToggleIsFlipped">
-    <p>@(IsFlipped ? @Id : "?")</p>
-</div>
-
 @* 
     This is the Card component that represents a single card in the game. We need to
     track the state of the card to determine if it has been flipped or matched. We also
@@ -12,6 +8,10 @@
     we can flip the cards back over. 
 *@
 
+
+<div class="card" @onclick="ToggleIsFlipped">
+    <p>@(IsFlipped ? @Id : "?")</p>
+</div>
 
 @code {
     [Parameter]
