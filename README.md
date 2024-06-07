@@ -24,6 +24,7 @@ To complete this challenge, you will need to implement the game logic and user i
 ## Basic Requirements
 
 The game should have the following required features:
+
 - A grid of cards that are randomly placed and face down.
 - The ability to flip over cards to reveal the image on the other side.
 - Logic to check if the images on two cards match.
@@ -36,6 +37,7 @@ The game should have the following required features:
 ## Stretch Goals
 
 Some additional features you could add to enhance the game:
+
 - A timer to limit the time taken to complete the game.
 - A way to select the difficulty level of the game (e.g., number of cards, time limit).
 - A way to save the player's score and display a leaderboard.
@@ -50,7 +52,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 To help you get started, we have provided a basic scafolding for the game. The repository contains all of the starter code. The pages directory contains the SplashScreen, GameScreen, and EndScreen pages and the Card component.
 
-
 ### Prerequisites
 
 You will need the following tools:
@@ -63,18 +64,29 @@ You will need the following tools:
 
 1. Clone the repo:
 
-```
+```bash
 git clone https://github.com/im-copilot-sandbox/hackathon-csharpblazor-memorygame.git
 ```
 
 2. Navigate to the project directory:
 
-```
+```bash
 cd hackathon-csharpblazor-memorygame
 ```
-3. Start the server:
 
+3. Open the project in Visual Studio Code
+
+```bash
+code .
 ```
+
+4. Reopen the project in the DevContainer
+
+![Open DevContainer](.devcontainer/screenshot.png)
+
+5. Start the server:
+
+```bash
 dotnet watch
 ```
 
@@ -90,6 +102,5 @@ This project is built with DotNet Blazor. If you're new to these technologies, h
 
 - [Learn C#](https://dotnet.microsoft.com/en-us/learntocode)
 - [Blazor Documentation](https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-8.0&WT.mc_id=dotnet-35129-website)
-
 
 Happy coding!
